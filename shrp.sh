@@ -54,7 +54,7 @@ chmod a+rx /usr/local/bin/repo\
 
 mkdir shrp && cd shrp 
 
-repo init -u git://https://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0 --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
+repo init -u git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0 --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
 repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
 git clone https://github.com/ceb08/device_xiaomi_miatoll -b shrp device/xiaomi/miatoll
 
